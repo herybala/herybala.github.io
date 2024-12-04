@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hacker Test</h1>
+        <p>Testez vos compétences en résolvant ces défis.</p>
+    </header>
+    <main id="app">
+        <!-- Niveau 1 -->
+        <section id="niveau1" class="niveau actif">
+            <h2>Niveau 1 : Décryptage</h2>
+            <p>Décode ce message : <code>Uifsf jt b tfdsfu dpnf</code></p>
+            <input type="text" id="reponse1" placeholder="Votre réponse">
+            <button onclick="verifierReponse(1)">Valider</button>
+        </section>
+
+        <!-- Fin -->
+        <section id="fin" class="niveau">
+            <h2>Félicitations !</h2>
+            <p>Vous avez terminé tous les niveaux. Bravo ! 🎉</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
