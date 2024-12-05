@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- <span id="indice2" style="display: none;">Réponse : cybersecurite</span> -->
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -8,22 +9,48 @@
 </head>
 <body>
     <header>
-        <h1>Hacker Test</h1>
-        <p>Testez vos compétences en résolvant ces défis.</p>
+        <h1>Pour le fun</h1>
     </header>
     <main id="app">
+        <!-- <div id="timer">Temps restant : <span id="temps">360</span> secondes</div> -->
+
         <!-- Niveau 1 -->
         <section id="niveau1" class="niveau actif">
-            <h2>Niveau 1 : Décryptage</h2>
-            <p>Décode ce message : <code>Uifsf jt b tfdsfu dpnf</code></p>
+            <div id="timer">Temps restant : <span id="temps">360</span> secondes</div>
+            <h2>Niveau 1 : Il faut juste de l'attention</h2>
+            <p>Décode ce message : <code>divise  moi par deux</code></p>
             <input type="text" id="reponse1" placeholder="Votre réponse">
             <button onclick="verifierReponse(1)">Valider</button>
+        </section>
+
+        <!-- Niveau 2 -->
+        <section id="niveau2" class="niveau">
+            <h2>Niveau 2 : Mot caché</h2>
+            <input type="text" id="reponse2" placeholder="Votre réponse">
+            <button onclick="verifierReponse(2)">Valider</button>
+            <!-- Indice caché -->
+            <!-- <span id="indice2" style="display: none;">Réponse : cybersécurité</span> -->
+        </section>
+
+        <!-- Niveau 3 -->
+        <section id="niveau3" class="niveau">
+            <!-- <p>Console</p> -->
+            <input type="text" id="reponse3" placeholder="Votre réponse">
+            <button onclick="verifierReponse(3)">Valider</button>
+        </section>
+
+        <!-- Niveau 4 -->
+        <section id="niveau4" class="niveau">
+            <h2>Niveau 4 : Mini-puzzle</h2>
+            <p><strong>f(5) = 3 ; f(10) = 7 ; f(15) = ?</strong></p>
+            <input type="text" id="reponse4" placeholder="Votre réponse">
+            <button onclick="verifierReponse(4)">Valider</button>
         </section>
 
         <!-- Fin -->
         <section id="fin" class="niveau">
             <h2>Félicitations !</h2>
-            <p>Vous avez terminé tous les niveaux. Bravo ! 🎉</p>
+            <p>Vous avez terminé tous les niveaux. Votre temps restant est de <span id="tempsFinal">0</span> secondes. Bravo ! 🎉</p>
         </section>
     </main>
     <script src="script.js"></script>
