@@ -50,3 +50,12 @@ button:hover {
     margin: 1rem;
     color: #ff5722;
 }
+
+/* Galerie */
+.image-galerie {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
